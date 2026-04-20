@@ -1,0 +1,63 @@
+v6
+
+- set up docker image
+https://drive.google.com/drive/u/2/folders/1CiSFXPxc4CWra5Frt1u-OZHlWwG5BqMz
+- write yml file to deploy images and run containers and make in one network
+- update master.xml run test in linux
+
+v5
+
+-Download selenium-server-4.20.0.jar and place it somewhere.
+-Run below command to start Selenium Grid
+-java -jar selenium-server-4.20.0.jar standalone
+-URL to see sessions:  http://localhost:4444/  
+-Add execution_env=local/remote in config.properties file under resources folder.
+- Update setup() method in the BaseClass (capture execution environment from config.properties file then add required capabilities of OS & Browser in conditions). 
+-Run the tests from testing.xml
+v4 
+	- extent reporting
+	- created utility class
+	- modefied webdriver property to static in baseClass bcz extent report will create baseclass obj while taking screenshot for failed test case
+	- udpated testng xml with listener 
+	- downloaded dependcy from maven 
+				<dependency>
+			    <groupId>com.aventstack</groupId>
+			    <artifactId>extentreports</artifactId>
+			    <version>5.1.1</version>
+				</dependency>
+
+v3 
+- data driven testing using excel 
+- testCases tc3 log in dtt
+- added utilities excelutility and dataprovider classes
+- filter and run the tests using grouping concept in testng framework
+- all testcases classes udpated with tags and testng update with grouping xml 
+- add below in pom for execl utility dependency
+
+					<dependency>
+					    <groupId>org.apache.poi</groupId>
+					    <artifactId>poi</artifactId>
+					    <version>5.2.5</version>
+					</dependency>
+					
+					<dependency>
+					    <groupId>org.apache.poi</groupId>
+					    <artifactId>poi-ooxml</artifactId>
+					    <version>5.2.5</version>
+					</dependency>
+
+v2 
+
+- Login and myaccount pages
+- login test
+
+
+v1
+- log4j Implementation
+- parllel testing using testNG parameters linking to baseClass with different browsers
+- reading url from property file
+
+v0
+- page classes & basePage (parent class for webdriver intiation across all pages)
+- baseClass - browser setup and teardown, reusable methods
+- TestCases - test runner final validations

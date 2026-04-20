@@ -1,0 +1,47 @@
+v4 
+	- extent reporting
+	- created utility class
+	- modefied webdriver property to static in baseClass bcz extent report will create baseclass obj while taking screenshot for failed test case
+	- udpated testng xml with listener 
+	- downloaded dependcy from maven 
+				<dependency>
+			    <groupId>com.aventstack</groupId>
+			    <artifactId>extentreports</artifactId>
+			    <version>5.1.1</version>
+				</dependency>
+
+v3 
+- data driven testing using excel 
+- testCases tc3 log in dtt
+- added utilities excelutility and dataprovider classes
+- filter and run the tests using grouping concept in testng framework
+- all testcases classes udpated with tags and testng update with grouping xml 
+- add below in pom for execl utility dependency
+
+					<dependency>
+					    <groupId>org.apache.poi</groupId>
+					    <artifactId>poi</artifactId>
+					    <version>5.2.5</version>
+					</dependency>
+					
+					<dependency>
+					    <groupId>org.apache.poi</groupId>
+					    <artifactId>poi-ooxml</artifactId>
+					    <version>5.2.5</version>
+					</dependency>
+
+v2 
+
+- Login and myaccount pages
+- login test
+
+
+v1
+- log4j Implementation
+- parllel testing using testNG parameters linking to baseClass with different browsers
+- reading url from property file
+
+v0
+- page classes & basePage (parent class for webdriver intiation across all pages)
+- baseClass - browser setup and teardown, reusable methods
+- TestCases - test runner final validations

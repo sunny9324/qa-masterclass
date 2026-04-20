@@ -1,0 +1,8 @@
+v1
+- log4j Implementation
+- parllel testing using testNG parameters linking to baseClass with different browsers
+
+v0
+- page classes & basePage (parent class for webdriver intiation across all pages)
+- baseClass - browser setup and teardown, reusable methods
+- TestCases - test runner final validations

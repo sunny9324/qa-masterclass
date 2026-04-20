@@ -1,0 +1,4 @@
+v0
+- page classes & basePage (parent class for webdriver intiation across all pages)
+- baseClass - browser setup and teardown, reusable methods
+- TestCases - test runner final validations
